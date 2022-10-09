@@ -6,6 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 
+import { LayoutModule } from '../layout/layout.module';
+
 import { AccountService } from './services/account.service';
 
 @NgModule({
@@ -21,7 +23,8 @@ import { AccountService } from './services/account.service';
   ],
   imports: [
     CommonModule,
-    AccountRoutingModule
+    AccountRoutingModule,
+    LayoutModule,
   ],
   providers: [
     AccountService,
